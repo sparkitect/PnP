@@ -36,7 +36,7 @@ namespace Microsoft.SharePoint.Client
         public static Guid AddSiteCollectionTenant(this Web web, SiteEntity properties, bool removeFromRecycleBin = false, bool wait = true)
         {
             Tenant tenant = new Tenant(web.Context);
-            return tenant.AddSiteCollection(properties, removeFromRecycleBin, wait);
+            return tenant.CreateSiteCollection(properties, removeFromRecycleBin, wait);
         }
 
         [Obsolete("Use Tenant.CheckIfSiteExists()")]
@@ -991,6 +991,22 @@ namespace Microsoft.SharePoint.Client
         /// <returns>Returns an EventReceiverDefinition if succeeded. Returns null if failed.</returns>
         public static EventReceiverDefinition AddRemoteEventReceiver(this Web web, string name, string url, EventReceiverType eventReceiverType, EventReceiverSynchronization synchronization, bool force)
         {
+            return web.AddRemoteEventReceiver(name, url, eventReceiverType, synchronization, 1000, force);
+        }
+
+        /// <summary>
+        /// Registers a remote event receiver
+        /// </summary>
+        /// <param name="web">The web to process</param>
+        /// <param name="name">The name of the event receiver (needs to be unique among the event receivers registered on this list)</param>
+        /// <param name="url">The URL of the remote WCF service that handles the event</param>
+        /// <param name="eventReceiverType"></param>
+        /// <param name="synchronization"></param>
+        /// <param name="sequenceNumber"></param>
+        /// <param name="force">If True any event already registered with the same name will be removed first.</param>
+        /// <returns>Returns an EventReceiverDefinition if succeeded. Returns null if failed.</returns>
+        public static EventReceiverDefinition AddRemoteEventReceiver(this Web web, string name, string url, EventReceiverType eventReceiverType, EventReceiverSynchronization synchronization, int sequenceNumber, bool force)
+        {
             var query = from receiver
                    in web.EventReceivers
                         where receiver.ReceiverName == name
@@ -1014,6 +1030,7 @@ namespace Microsoft.SharePoint.Client
                 receiver.EventType = eventReceiverType;
                 receiver.ReceiverUrl = url;
                 receiver.ReceiverName = name;
+                receiver.SequenceNumber = sequenceNumber;
                 receiver.Synchronization = synchronization;
                 def = web.EventReceivers.Add(receiver);
                 web.Context.Load(def);
@@ -1077,6 +1094,7 @@ namespace Microsoft.SharePoint.Client
         #endregion
 
         #region Localization
+#if !CLIENTSDKV15
         /// <summary>
         /// Can be used to set translations for different cultures. 
         /// </summary>
@@ -1098,6 +1116,7 @@ namespace Microsoft.SharePoint.Client
             web.Update();
             web.Context.ExecuteQuery();
         }
+#endif
         #endregion
 
     }

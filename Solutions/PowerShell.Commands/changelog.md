@@ -1,5 +1,18 @@
 # OfficeDevPnP.PowerShell Changelog #
 
+**2014-10-15**
+* Added Add-SPOWorkflowSubscription, Get-SPOWorkflowDefinition, Get-SPOWorkflowSubscription, Remove-SPOWorkflowDefinition, Remove-SPOWorkflowSubscription, Resume-SPOWorkflowInstance, Stop-SPOWorkflowInstance
+
+**2014-10-14**
+* Added Get-SPOUserProfileProperty cmdlet
+* Added New-SPOPersonalSite cmdlet
+* Fixed Get-SPOView cmdlet
+
+**2014-10-08**
+* Added Set-SPODefaultColumnValue 
+**2014-09-19**
+* Removed Url Parameters on Add-SPOFile and made Folder parameter mandatory.
+
 **2014-09-06**
 * Added new Set-SPOWeb cmdlet to set Title, SiteLogo, or AlternateCssUrl
 

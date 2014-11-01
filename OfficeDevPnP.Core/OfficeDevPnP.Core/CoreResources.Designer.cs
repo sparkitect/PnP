@@ -232,6 +232,33 @@ namespace OfficeDevPnP.Core {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Adding field ({0}) to content type ({1})..
+        /// </summary>
+        internal static string FieldAndContentTypeExtensions_AddField0ToContentType1 {
+            get {
+                return ResourceManager.GetString("FieldAndContentTypeExtensions_AddField0ToContentType1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Content type &apos;{0}&apos; ({1}) already exists; no changes made..
+        /// </summary>
+        internal static string FieldAndContentTypeExtensions_ContentType01AlreadyExists {
+            get {
+                return ResourceManager.GetString("FieldAndContentTypeExtensions_ContentType01AlreadyExists", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Creating content type &apos;{0}&apos; ({1})..
+        /// </summary>
+        internal static string FieldAndContentTypeExtensions_CreateContentType01 {
+            get {
+                return ResourceManager.GetString("FieldAndContentTypeExtensions_CreateContentType01", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Creating document set &apos;{0}&apos;..
         /// </summary>
         internal static string FieldAndContentTypeExtensions_CreateDocumentSet {
@@ -241,11 +268,29 @@ namespace OfficeDevPnP.Core {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Creating field &apos;{0}&apos; ({1})..
+        /// </summary>
+        internal static string FieldAndContentTypeExtensions_CreateField01 {
+            get {
+                return ResourceManager.GetString("FieldAndContentTypeExtensions_CreateField01", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to New Field as XML: {0}.
         /// </summary>
         internal static string FieldAndContentTypeExtensions_CreateFieldBase {
             get {
                 return ResourceManager.GetString("FieldAndContentTypeExtensions_CreateFieldBase", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Field &apos;{0}&apos; ({1}) already exists; no changes made..
+        /// </summary>
+        internal static string FieldAndContentTypeExtensions_Field01AlreadyExists {
+            get {
+                return ResourceManager.GetString("FieldAndContentTypeExtensions_Field01AlreadyExists", resourceCulture);
             }
         }
         
@@ -270,9 +315,18 @@ namespace OfficeDevPnP.Core {
         /// <summary>
         ///   Looks up a localized string similar to Uploading file &apos;{0}&apos; to folder &apos;{1}&apos;..
         /// </summary>
-        internal static string FileFolderExtensions_UploadFile {
+        internal static string FileFolderExtensions_UploadFile0ToFolder1 {
             get {
-                return ResourceManager.GetString("FileFolderExtensions_UploadFile", resourceCulture);
+                return ResourceManager.GetString("FileFolderExtensions_UploadFile0ToFolder1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Creating list &apos;{0}&apos; from template {1}{2}..
+        /// </summary>
+        internal static string ListExtensions_CreateList0Template12 {
+            get {
+                return ResourceManager.GetString("ListExtensions_CreateList0Template12", resourceCulture);
             }
         }
         
@@ -282,6 +336,204 @@ namespace OfficeDevPnP.Core {
         internal static string LoggingUtility_MessageWithException {
             get {
                 return ResourceManager.GetString("LoggingUtility_MessageWithException", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mail message could not be sent. SMTP exception attempting to send..
+        /// </summary>
+        internal static string MailUtility_SendException {
+            get {
+                return ResourceManager.GetString("MailUtility_SendException", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mail message could not be sent. Exception attempting to send email, rethrowing. Exception: {0}.
+        /// </summary>
+        internal static string MailUtility_SendExceptionRethrow0 {
+            get {
+                return ResourceManager.GetString("MailUtility_SendExceptionRethrow0", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mail message could not be sent. Send completed with error..
+        /// </summary>
+        internal static string MailUtility_SendFailed {
+            get {
+                return ResourceManager.GetString("MailUtility_SendFailed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mail message was canceled..
+        /// </summary>
+        internal static string MailUtility_SendMailCancelled {
+            get {
+                return ResourceManager.GetString("MailUtility_SendMailCancelled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Service registration for {0} using endpoint {1} and cachekey {2} failed..
+        /// </summary>
+        internal static string Service_RegistrationFailed {
+            get {
+                return ResourceManager.GetString("Service_RegistrationFailed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Service requestor is not registered: access denied.
+        /// </summary>
+        internal static string Services_AccessDenied {
+            get {
+                return ResourceManager.GetString("Services_AccessDenied", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The cookie with the cachekey was not found...nothing can be retrieved from cache, so no clientcontext can be created..
+        /// </summary>
+        internal static string Services_CookieWithCachKeyNotFound {
+            get {
+                return ResourceManager.GetString("Services_CookieWithCachKeyNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Service {0} has been registered for endpoint {1} using cachekey {2}..
+        /// </summary>
+        internal static string Services_Registered {
+            get {
+                return ResourceManager.GetString("Services_Registered", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Token for cachekey {0} and hostweburl {1} has been refreshed..
+        /// </summary>
+        internal static string Services_TokenRefreshed {
+            get {
+                return ResourceManager.GetString("Services_TokenRefreshed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Creating term &apos;{0}|{1}&apos; under parent &apos;{2}&apos;..
+        /// </summary>
+        internal static string TaxonomyExtension_CreateTerm01UnderParent2 {
+            get {
+                return ResourceManager.GetString("TaxonomyExtension_CreateTerm01UnderParent2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Creating term group &apos;{0}&apos; in term store &apos;{1}&apos;..
+        /// </summary>
+        internal static string TaxonomyExtension_CreateTermGroup0InStore1 {
+            get {
+                return ResourceManager.GetString("TaxonomyExtension_CreateTermGroup0InStore1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Creating term set &apos;{0}&apos; in term group &apos;{1}&apos;..
+        /// </summary>
+        internal static string TaxonomyExtension_CreateTermSet0InGroup1 {
+            get {
+                return ResourceManager.GetString("TaxonomyExtension_CreateTermSet0InGroup1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Deleting term &apos;{0}|{1}&apos;..
+        /// </summary>
+        internal static string TaxonomyExtension_DeleteTerm01 {
+            get {
+                return ResourceManager.GetString("TaxonomyExtension_DeleteTerm01", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error setting description for term group &apos;{0}&apos; ({1})..
+        /// </summary>
+        internal static string TaxonomyExtension_ExceptionUpdateDescriptionGroup01 {
+            get {
+                return ResourceManager.GetString("TaxonomyExtension_ExceptionUpdateDescriptionGroup01", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error setting description for term set &apos;{0}&apos; ({1})..
+        /// </summary>
+        internal static string TaxonomyExtension_ExceptionUpdateDescriptionSet01 {
+            get {
+                return ResourceManager.GetString("TaxonomyExtension_ExceptionUpdateDescriptionSet01", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error encountered during import when attempting to delete invalid term with id {0} on line {1}..
+        /// </summary>
+        internal static string TaxonomyExtension_ImportErrorDeleteId0Line1 {
+            get {
+                return ResourceManager.GetString("TaxonomyExtension_ImportErrorDeleteId0Line1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error encountered during import. The description &apos;{0}&apos; on line {1} is not valid..
+        /// </summary>
+        internal static string TaxonomyExtension_ImportErrorDescription0Line1 {
+            get {
+                return ResourceManager.GetString("TaxonomyExtension_ImportErrorDescription0Line1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error encountered during import.  The name &apos;{0}&apos; is not valid on line {1}..
+        /// </summary>
+        internal static string TaxonomyExtension_ImportErrorName0Line1 {
+            get {
+                return ResourceManager.GetString("TaxonomyExtension_ImportErrorName0Line1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error encountered during import. The available for tagging entry on line {0} is not valid..
+        /// </summary>
+        internal static string TaxonomyExtension_ImportErrorTaggingLine0 {
+            get {
+                return ResourceManager.GetString("TaxonomyExtension_ImportErrorTaggingLine0", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Importing term set from file stream..
+        /// </summary>
+        internal static string TaxonomyExtension_ImportTermSet {
+            get {
+                return ResourceManager.GetString("TaxonomyExtension_ImportTermSet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Term group &apos;{0}&apos; ID ({1}) does not match specified ID ({2})..
+        /// </summary>
+        internal static string TaxonomyExtension_TermGroup0Id1DoesNotMatchSpecifiedId2 {
+            get {
+                return ResourceManager.GetString("TaxonomyExtension_TermGroup0Id1DoesNotMatchSpecifiedId2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Term set &apos;{0}&apos; ID ({1}) does not match specified ID ({2})..
+        /// </summary>
+        internal static string TaxonomyExtension_TermSet0Id1DoesNotMatchSpecifiedId2 {
+            get {
+                return ResourceManager.GetString("TaxonomyExtension_TermSet0Id1DoesNotMatchSpecifiedId2", resourceCulture);
             }
         }
         
@@ -349,7 +601,7 @@ namespace OfficeDevPnP.Core {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Removing sandbox solution &apos;{0}&apos;.
+        ///   Looks up a localized string similar to Removing sandbox solution &apos;{0}&apos;..
         /// </summary>
         internal static string WebExtensions_UninstallSolution {
             get {
